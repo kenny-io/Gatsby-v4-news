@@ -5,13 +5,26 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-mdx",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "pages",
+    //     path: "./src/pages/",
+    //   },
+    //   __key: "pages",
+    // },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/content/news`,
+        name: `news`,
       },
-      __key: "pages",
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
+      },
     },
   ],
 };
