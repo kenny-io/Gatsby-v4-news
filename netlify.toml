@@ -4,3 +4,6 @@ publish = "public"
 
 [[plugins]]
 package = "@netlify/plugin-gatsby"
+
+[build.environment]
+  NODE_VERSION = "14.17.4"
