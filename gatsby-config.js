@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-mdx",
+    "gatsby-plugin-netlify",
     // {
     //   resolve: "gatsby-source-filesystem",
     //   options: {
