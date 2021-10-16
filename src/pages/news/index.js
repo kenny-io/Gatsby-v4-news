@@ -28,7 +28,7 @@ export default function IndexPage({ data }) {
               <p>{node.frontmatter.excerpt}</p>
               <p
                 className={`${
-                  node.frontmatter.tag == "breaking" ? breaking : archive
+                  node.frontmatter.tag === "breaking" ? breaking : archive
                 }`}
               >
                 {node.frontmatter.tag}
