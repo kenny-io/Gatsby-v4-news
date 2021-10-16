@@ -32,9 +32,7 @@ const IndexPage = () => {
       <main style={container}>
         <Link to={`/news`}>
           <button type="button" style={buttonStyle}>
-            <a>
-              <h2>Read Our News 🚀</h2>
-            </a>
+            Read Our News 🚀
           </button>
         </Link>
       </main>
